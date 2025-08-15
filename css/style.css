@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Honk&family=Mansalva&display=swap');
+
+body {
+    font-family: "Mansalva", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(rgb(75 75 75 / 50%),
+     rgb(75 75 75 / 50%)), 
+     url(../images/restaurant.jpg);
+    background-size: 100%;
+}
+
+header, footer {
+    background: #f8b400;
+    text-align: center;
+    border-radius: 0 0 13% 13%;
+    border-bottom: #d59b01 groove 5px;
+}
+footer{
+    border-radius: 13% 13% 0 0;
+}
+h1 {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "MORF" 15, "SHLN" 50;
+    font-size: 35px;
+    margin: 0;
+    margin-bottom: 0.5%;
+}
+.logoIcon{
+    width: 4.5%;
+}
+nav{
+    height: 7vh;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffff8e;
+    text-shadow: 0px 2px #c71e37;
+    font-size: 22px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    min-height: 80vh;
+    
+}
+#order-form-section{
+    flex: 1;
+}
+#orders-list-section{
+    flex: 2;
+}
+h2{
+    color: #e6a906;
+    text-shadow: 1px 1px #a14f00;
+    font-size: 27px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+label{
+    color: #4c3800;
+    font-size: 20px;
+    margin-right: 5%;
+    font-weight: bolder;
+}
+input{
+    border: solid 2px #4c3800;
+    color: #4f4f4f;
+    padding: 0% 6%;
+    border-radius: 7%;
+    font-family: "Mansalva", sans-serif;
+    font-size: 17px;
+    background: #f9f7f1;
+}
+
+button{
+    border: none;
+    color: #ffffff;
+    background: #f8b400;
+    font-size: 17px;
+    width: 50%;
+    margin: 5% auto;
+    font-family: "Mansalva", sans-serif;
+}
+button:hover{
+    cursor: pointer;
+}
+#ordersTable {
+    border-collapse: collapse;
+    width: 100%;
+    background: #f9f7f1;
+    color: #4c3800;
+}
+
+#ordersTable th, #ordersTable td {
+    border: 1px solid #ddd;
+    padding: 8px 30px;
+    flex: 1;
+    font-size: 20px;
+}
+#ordersTable td {
+    font-size: 18px;
+}
+#ordersTable tr{
+    display: flex;
+    width: 112.5%;
+}
+#ordersTable td img{
+    width: 50%;
+    height: 150px;
+    object-fit: contain;
+}
+#menu-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.menu-item {
+    border: 3px solid #cfc5a9;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background: #e2ddd16e;
+    margin-top: 10px;
+    border-radius: 11px;
+}
+.menu-item img {
+    max-width: 100%;
+    height: 150px;
+    width: fit-content;
+    object-fit: contain;
+}
